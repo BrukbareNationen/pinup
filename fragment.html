@@ -622,8 +622,8 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <script type="text/javascript">
-        jQuery(document).ready(function(){
-            jQuery('.nat-carousel').slick({
+       (function run() {
+        document.querySelectorAll('.nat-carousel').slick({
             infinite: true,
             dots: true,
             speed: 300,
@@ -631,7 +631,9 @@
             centerMode: true,
             variableWidth: true
           });
-        });
+       })();
+            
+       
     </script>
 
 
